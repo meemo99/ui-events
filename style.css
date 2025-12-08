@@ -85,7 +85,7 @@ a[href="#design"] {
 
 /* Hieronder komen jouw animaties en stijlen */
 
-/* Scale animation on the Frontend link */
+/* #1 Scale animation on the Frontend link */
 a[href="#frontend"] {
   scale: 1;
 }
@@ -94,7 +94,7 @@ a.huge {
   scale: 2;
 }
 
-/* Translation animation on the And link */
+/* #3 Translation animation on the And link */
 
 a[href="#and"] {
   translate: none;
@@ -103,3 +103,32 @@ a[href="#and"] {
 a.up {
   translate: 10% -50%;
 }
+
+
+/* #4 Shake animation on the Development Link */
+
+
+.shakeit {
+  animation: shake 0.3s;
+}
+@keyframes shake{
+  
+ 0% {
+  transform: translateX(0);
+ }
+ 25% {
+  transform: translateX(41px);
+ }
+ 50%{
+  transform: translateX(-41px);
+ }
+ 75% {
+  transform: translateX(41px);
+ }
+ 100% {
+  transform: translateX(0);
+ }
+  
+}
+
+/* #5 Focus Kleuren animatie op Sprint 5 */

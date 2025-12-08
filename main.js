@@ -26,14 +26,28 @@ designLink.addEventListener('animationend', jumpHandler)
 // Maak bijvoorbeeld een scale animatie als je op de Frontend link klikt
 
 // #1 Scale Animation
+
+// Stap 1 selecteer Frontend link
 let scaleLink = document.querySelector('a[href="#frontend"]')
+// Stap 2 Voeg EventListener toe('click')
 scaleLink.addEventListener('click', function(){
+  // Stap 3 toggle een class aan een element
   scaleLink.classList.toggle('huge')
 })
 
-// # Translate Animation
+// #3 Translate Animation
 
 let upLink = document.querySelector ('a[href="#and"]')
   upLink.addEventListener('click', function(){
     upLink.classList.toggle('up')
+  })
+
+// #4 Shake animation
+  // Stap 1 Selecteer de Development link
+  let shakeItUp = document.querySelector ('a[href="#development"]')
+    console.log('a[href="#development"]')
+  // Stap 2 voeg eventListener toe (dblclick)
+  shakeItUp.addEventListener('dblclick', function(){
+  // stap 3 toggle een class aan een element
+  shakeItUp.classList.toggle('shakeit')
   })
