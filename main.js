@@ -26,10 +26,10 @@ designLink.addEventListener('animationend', jumpHandler)
 // Maak bijvoorbeeld een scale animatie als je op de Frontend link klikt
 
 // Stap 1: querySelector
-// let scaleLink = document.querySelector...
+let scaleLink = document.querySelector('a[href="#frontend"]')
 
-// Stap 2: addEventListener
-// scaleLink.addEventListener...
-
-// Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
-// scaleLink.classList.toggle...
+console.log('hoi!')
+console.log(scaleLink)
+scaleLink.addEventListener('click', function(){
+  scaleLink.classList.toggle('huge')
+})

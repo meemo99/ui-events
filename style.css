@@ -84,3 +84,12 @@ a[href="#design"] {
 
 
 /* Hieronder komen jouw animaties en stijlen */
+
+/* Scale animation on the Frontend link */
+a[href="#frontend"] {
+  scale: 1;
+}
+
+a.huge {
+  scale: 2;
+}
