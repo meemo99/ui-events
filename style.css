@@ -93,3 +93,13 @@ a[href="#frontend"] {
 a.huge {
   scale: 2;
 }
+
+/* Translation animation on the And link */
+
+a[href="#and"] {
+  translate: none;
+}
+
+a.up {
+  translate: 10% -50%;
+}
