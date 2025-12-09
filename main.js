@@ -51,3 +51,12 @@ let upLink = document.querySelector ('a[href="#and"]')
   // stap 3 toggle een class aan een element
   shakeItUp.classList.toggle('shakeit')
   })
+
+  // #5 Focus kleur animatie
+    // Stap 1 Selecteer de Sprint 5 link
+    let colourChange = document.querySelector ('a[href="#sprint-5"]')
+    // Stap 2 voeg EventListener toe (focus)
+    colourChange.addEventListener('focus', function(){
+    //Stap 3 add een class aan een element
+    colourChange.classList.add('focused')
+    })
